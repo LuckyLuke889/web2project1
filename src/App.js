@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import LoginButton from "./components/LoginButton";
+import LogoutButton from "./components/LogoutButton";
+import TournamentButton from "./components/TournamentButton";
+import './CreateTournament.css'
+import User from "./User";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="signup">
+      <User />
+      <div className="form-holder">
+      <LoginButton />
+      <LogoutButton />
+      <TournamentButton />
+      </div>
     </div>
   );
 }
